@@ -20,5 +20,123 @@
 
     <!-- Comment is a block or line that is ignored or that does not executed.
     You can write Comment for understanding the code and also to explain it to other developers -->
+
+    <!-- heading -->
+    <h1>heading</h1>
+    <h2>heading</h2>
+    <h3>heading</h3>
+    <h4>heading</h4>
+    <h5>heading</h5>
+    <h6>heading</h6>
+
+    <!-- paragraph -->
+    <p>
+      <b>Lorem</b> <i>ipsum</i>, dolor <sup>super script</sup>
+      <sub>sub script</sub> sit amet consectetur adipisicing elit. Tenetur
+      aperiam omnis deserunt consectetur facere animi sunt officiis sint!
+      Aliquid, odit! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Labore distinctio illo praesentium vero sed, recusandae facere! Ratione
+      velit ducimus delectus.
+    </p>
+
+    <!-- anchor tag - used for external link or url -->
+    <a href="https://youtube.com">yt</a>
+
+    <div>
+      <!-- div tag used to create a divison -->
+      <img src="./images/semantics-tags.jpeg" alt="no image found" />
+      <!-- image tag src contain the path/location to the image and "alt" contain text that will displayed when there is error in loading thae image -->
+    </div>
+
+    <!-- list tag unordered, ordered, description list -->
+    <!-- <li> represent list elements -->
+    <div>
+      <ul>
+        <li>milk</li>
+        <li>coffee</li>
+        <li>sugar</li>
+        <li>salt</li>
+      </ul>
+    </div>
+
+    <div>
+      <ol>
+        <li>milk</li>
+        <li>coffee</li>
+        <li>sugar</li>
+        <li>salt</li>
+      </ol>
+    </div>
+
+    <div>
+      <dl>
+        <dt>milk</dt>
+        <!-- <dt> this is title -->
+        <dd>-I like milk</dd>
+        <!-- <dd> this is description -->
+
+        <dt>coffee</dt>
+        <dd>-Coffee shop</dd>
+      </dl>
+    </div>
+
+    <form action="action.php">
+      <label for="username">Username:</label>
+      <!-- <label> tag in HTML is used to provide a usability improvement for mouse users i.e, if a user clicks on the text within the <label> element, it toggles the control. -->
+      <input type="text" name="Username" id="username" /> <br />
+      <label for="password">Password:</label>
+      <input type="password" name="Password" id="password" /> <br />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" /><br />
+      <input type="radio" name="gender" id="m" />
+      <label for="m">MALE</label>
+      <input type="radio" name="gender" id="f" />
+      <label for="f">FEMALE</label><br />
+      <label for="html">
+        <input type="checkbox" name="html" id="html" checked />HTML
+        <!-- checked attribute will mark it as checked when the form loads -->
+      </label>
+      <label for="css"> <input type="checkbox" name="css" id="css" />CSS </label
+      ><br />
+      FAV LANGUAGE:
+      <select name="language" id="lang">
+        <option>html</option>
+        <option disabled>css</option>
+        <!-- disabled attritbute that will disabled this option -->
+        <option>javascript</option>
+        <option>php</option>
+        <option>bootstrap</option></select
+      ><br />
+      <input type="submit" />
+      <!-- default form button to submit -->
+      <input type="reset" value="reset button" />
+      <button>submit</button>
+      <!-- button tag to set your own method to submit the form -->
+    </form>
+    <br />
+    <!-- <br> tag will break the line -->
+    <hr />
+    <!-- self-closing tags doesn't need an additional closing tag -->
+
+    <table>
+      <!-- table title -->
+      <caption>
+        languages
+      </caption>
+      <tr>
+        <!-- table heading -->
+        <th>Language</th>
+        <th>Extension</th>
+      </tr>
+      <tr>
+        <!-- table data -->
+        <td>HTML</td>
+        <td>.html</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>.css</td>
+      </tr>
+    </table>
   </body>
 </html>
