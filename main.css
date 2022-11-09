@@ -1,0 +1,61 @@
+/* applied to all tags or universal property */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#sample {
+  color: white;
+  background: black;
+
+  padding-left: 10px;
+  /* padding: 10px ; */
+  /* both axis  */
+
+  /* padding: 10px 20px; */
+  /* y-axis x-axis */
+
+  /* padding: 10px 20px 30px 40px; */
+  /* top right bottom left */
+}
+
+/* when you hoover on 'a' tag */
+a:hover {
+  color: green;
+  /* change color of text */
+}
+
+/* if the link is visited */
+a:visited {
+  color: darkblue;
+}
+
+a {
+  text-decoration: none;
+  /* used to remove underline from 'a' tag */
+  color: white;
+}
+
+nav > ul > li {
+  list-style: none;
+  /* used to remove dot from list */
+}
+
+/* applied to both 'a' and 'p' tag */
+p,
+a {
+  margin: 10px;
+}
+
+nav {
+  background: black;
+}
+
+li {
+  background: green;
+}
+
+/* applied to 'p' tag that is successive to a 'div' tag */
+div + p {
+  background: red;
+}
