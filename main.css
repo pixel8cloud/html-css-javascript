@@ -19,12 +19,6 @@
   /* top right bottom left */
 }
 
-/* when you hoover on 'a' tag */
-a:hover {
-  color: green;
-  /* change color of text */
-}
-
 /* if the link is visited */
 a:visited {
   color: darkblue;
@@ -33,7 +27,19 @@ a:visited {
 a {
   text-decoration: none;
   /* used to remove underline from 'a' tag */
+
   color: white;
+  font-weight: 800;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  font-style: italic; */
+
+  /* above three line will be written as 
+  font: font-style font-width font-family;
+  font: italic 50px 'Gill Sans'; */
+
+  /* importing external fonts */
+  font-family: "Oswald", sans-serif;
 }
 
 nav > ul > li {
@@ -42,20 +48,15 @@ nav > ul > li {
 }
 
 /* applied to both 'a' and 'p' tag */
-p,
-a {
-  margin: 10px;
-}
 
 nav {
   background: black;
 }
 
-li {
-  background: green;
+.header {
+  background: lightblue;
 }
 
-/* applied to 'p' tag that is successive to a 'div' tag */
-div + p {
-  background: red;
+.header-span {
+  background: lightgray;
 }
