@@ -28,8 +28,7 @@ a {
   text-decoration: none;
   /* used to remove underline from 'a' tag */
 
-  color: white;
-  font-weight: 800;
+  /* font-weight: 800; */
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px;
   font-style: italic; */
@@ -47,10 +46,9 @@ nav > ul > li {
   /* used to remove dot from list */
 }
 
-/* applied to both 'a' and 'p' tag */
-
 nav {
-  background: black;
+  /* background: lightgray */
+  background: rgb(156, 154, 154);
 }
 
 .header {
@@ -59,4 +57,31 @@ nav {
 
 .header-span {
   background: lightgray;
+}
+
+.nav-bar {
+  /* you can write name of color (that id predefined) or write its hexcode or rgb value */
+  color: white;
+  /* color: #ffffff;
+  color: rgba(100, 200, 255, 0.7); */
+}
+
+.about {
+  height: 200px;
+  width: 200px;
+
+  /* Two method to give color to background of ang html element */
+  /* background: red; */
+  background-color: red;
+
+  /* Two method to give background image in ang html element */
+  /* background: url("./images/semantics-tags.jpeg"); */
+  background-image: url("./images/semantics-tags.jpeg");
+
+  /* change background size to fit either in x and y axis or increase width and height to touch the boundaries */
+  background-size: contain;
+
+  /* if background is small then it starts repeating to cover the entire area */
+  background-repeat: no-repeat;
+  background-position: center;
 }
