@@ -60,7 +60,7 @@
   padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
-  
+
   /* set the alignment of text help to format */
   text-align: justify;
 }
@@ -82,4 +82,29 @@
   /* you can use left or right  */
   /* avoid the effect of float */
   width: 75%;
+}
+
+.head_test {
+  border: 2px solid red;
+  width: 500px;
+  margin: auto;
+  /* can not give inline to parent if its child element is block */
+}
+
+.img_test {
+  border: 1px solid black;
+  border-radius: 100px;
+  margin: auto;
+  display: block;
+}
+
+.para_test {
+  color: white;
+  background: gray;
+  width: 100px;
+  /* display: inline-block; */
+  /* given to a make bloack element inine, so that it take only space needed and 
+  also has block properties, so we can adjust its width */
+  margin: auto;
+  text-align: center;
 }
