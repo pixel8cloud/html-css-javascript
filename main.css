@@ -87,7 +87,9 @@
 .head_test {
   border: 2px solid red;
   width: 500px;
+  height: 1000px;
   margin: auto;
+  padding-top: 50px;
   /* can not give inline to parent if its child element is block */
 }
 
@@ -96,6 +98,19 @@
   border-radius: 100px;
   margin: auto;
   display: block;
+
+  /* position: relative; */
+  /* change position from its actual position */
+
+  /* position: absolute; */
+  /* position from its parent  */
+
+  /* position: fixed; */
+  /* position relative browser window  */
+
+  /* position: sticky; */
+  /* position from its parent  */
+  top: 0px;
 }
 
 .para_test {
