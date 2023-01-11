@@ -3,6 +3,9 @@
   margin: 0px;
   padding: 0px;
 }
+html {
+  font-size: 25px;
+}
 
 .heading {
   color: white;
@@ -49,10 +52,13 @@
 }
 
 .container {
-  margin: 15px auto;
-  border: 2px solid black;
-  width: 900px;
+  border: 20px solid red;
+  /* width: 200px; */
+  font-size: 20px;
   box-sizing: border-box;
+  height: 70vh;
+  width: 70vw;
+  /* vw and ch is percentage of viewport width and height respectively */
 }
 
 .card {
@@ -66,22 +72,25 @@
 }
 
 #c1 {
-  float: left;
+  /* float: left; */
   /* float a element to left */
-  width: 40%;
+  font-size: 2em;
+  /* em --> 2 * parent size */
 }
 
 #c2 {
-  float: right;
+  /* float: right; */
   /* float a element to right */
-  width: 50%;
+  width: 200px;
+  font-size: 3rem;
+  /* rem --> 3 * html root */
 }
 
 #c3 {
-  clear: both;
+  /* clear: both; */
   /* you can use left or right  */
   /* avoid the effect of float */
-  width: 75%;
+  width: 70%;
 }
 
 .head_test {
