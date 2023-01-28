@@ -2,133 +2,87 @@
 * {
   margin: 0px;
   padding: 0px;
-}
-html {
-  font-size: 25px;
+  box-sizing: border-box;
 }
 
-.heading {
+.nav {
+  background-color: black;
+}
+
+nav ul {
+  overflow: auto;
+  float: left;
+}
+
+.nav ul li {
+  float: left;
+  list-style: none;
+  padding: 15px 0px;
+}
+
+.nav > ul > li > a {
   color: white;
-}
-
-.desc {
-  font: size 18px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 5px 0;
-}
-
-.btn {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  padding: 4px;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  /* background-color: black;
-  color: white;
-  border: 1px solid white; */
-
-  /* invert the colors used  or color inversion */
-  filter: invert(1);
-  cursor: pointer;
-}
-
-/* .card {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 250px;
-} */
-
-.headlink {
-  font-size: 25px;
-  font-weight: bold;
   text-decoration: none;
-  color: black;
+  padding: 15px 30px;
+  font-size: 20x;
+  font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+nav ul li:hover {
+  background-color: rgb(80, 78, 78);
 }
 
 .container {
-  border: 20px solid red;
-  /* width: 200px; */
-  font-size: 20px;
-  box-sizing: border-box;
-  height: 70vh;
-  width: 70vw;
-  /* vw and ch is percentage of viewport width and height respectively */
+  padding: 30px;
 }
 
 .card {
-  margin: 10px;
-  padding: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
   border: 1px solid black;
-  border-radius: 5px;
+  width: 300px;
+  padding: 25px 20px;
+}
 
-  /* set the alignment of text help to format */
+.card:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.card:hover .btn {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.desc {
+  display: inline-block;
+  line-height: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
   text-align: justify;
 }
 
-#c1 {
-  /* float: left; */
-  /* float a element to left */
-  font-size: 2em;
-  /* em --> 2 * parent size */
-}
-
-#c2 {
-  /* float: right; */
-  /* float a element to right */
-  width: 200px;
-  font-size: 3rem;
-  /* rem --> 3 * html root */
-}
-
-#c3 {
-  /* clear: both; */
-  /* you can use left or right  */
-  /* avoid the effect of float */
-  width: 70%;
-}
-
-.head_test {
-  border: 2px solid red;
-  width: 500px;
-  height: 1000px;
-  margin: auto;
-  padding-top: 50px;
-  /* can not give inline to parent if its child element is block */
-}
-
-.img_test {
+.btn {
   border: 1px solid black;
-  border-radius: 100px;
-  margin: auto;
-  display: block;
-
-  /* position: relative; */
-  /* change position from its actual position */
-
-  /* position: absolute; */
-  /* position from its parent  */
-
-  /* position: fixed; */
-  /* position relative browser window  */
-
-  /* position: sticky; */
-  /* position from its parent  */
-  top: 0px;
+  border-radius: 5px;
+  padding: 5px 7px;
 }
 
-.para_test {
-  color: white;
-  background: gray;
-  width: 100px;
-  /* display: inline-block; */
-  /* given to a make bloack element inine, so that it take only space needed and 
-  also has block properties, so we can adjust its width */
-  margin: auto;
-  text-align: center;
+.nav {
+  overflow: auto;
+}
+
+.search {
+  float: right;
+}
+
+.search input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
 }
