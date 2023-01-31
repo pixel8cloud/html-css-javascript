@@ -2,133 +2,145 @@
 * {
   margin: 0px;
   padding: 0px;
-}
-html {
-  font-size: 25px;
+  box-sizing: border-box;
 }
 
-.heading {
+.nav {
+  background-color: black;
+}
+
+nav ul {
+  overflow: auto;
+  float: left;
+}
+
+.nav ul li {
+  float: left;
+  list-style: none;
+  padding: 15px 0px;
+}
+
+.nav > ul > li > a {
   color: white;
-}
-
-.desc {
-  font: size 18px;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 20x;
+  font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 5px 0;
 }
 
-.btn {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  padding: 4px;
-  border-radius: 5px;
+nav ul li:hover {
+  background-color: rgb(80, 78, 78);
 }
 
-.btn:hover {
-  /* background-color: black;
+.card:hover {
+  background-color: black;
   color: white;
-  border: 1px solid white; */
-
-  /* invert the colors used  or color inversion */
-  filter: invert(1);
   cursor: pointer;
 }
 
-/* .card {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 250px;
-} */
-
-.headlink {
-  font-size: 25px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.card:hover .btn {
+  background-color: black;
+  color: white;
+  border-color: white;
 }
 
-.container {
-  border: 20px solid red;
-  /* width: 200px; */
-  font-size: 20px;
-  box-sizing: border-box;
-  height: 70vh;
-  width: 70vw;
-  /* vw and ch is percentage of viewport width and height respectively */
-}
-
-.card {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-
-  /* set the alignment of text help to format */
+.desc {
+  display: inline-block;
+  line-height: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
   text-align: justify;
 }
 
+.btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 7px;
+}
+
+.nav {
+  overflow: auto;
+}
+
+.search {
+  float: right;
+}
+
+.search input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.container {
+  padding: 30px 0px;
+  margin: 30px;
+  width: 95%;
+  height: 900px;
+  border: 2px solid black;
+  display: flex;
+  /* default direction is row */
+  /* flex-direction: column; */
+
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  padding: 25px 20px;
+  margin: 0px 10px;
+}
+
+:root {
+  /* create global variables with custom properties */
+  --primarycolor: red;
+  --bsize: 10px;
+}
+
 #c1 {
-  /* float: left; */
-  /* float a element to left */
-  font-size: 2em;
-  /* em --> 2 * parent size */
+  /* local variable work inside this block */
+  --primarycolor: red;
+
+  /* align-self: flex-start; */
+  /* flex-grow: 3;
+  flex-shrink: 3; */
+
+  /* hide element but space is still occupy by the element */
+  /* visibility: hidden; */
+  /* hide element and also remove space */
+  /* display: none; */
+
+  /* position: absolute;
+  /* not apply on static */
+  z-index: -2;
+
+  background: var(--primarycolor);
+  border: var(--bsize) solid black;
+  /* flex-basis: 400px; */
+  /* when direction is row then it set width of element */
 }
 
 #c2 {
-  /* float: right; */
-  /* float a element to right */
-  width: 200px;
-  font-size: 3rem;
-  /* rem --> 3 * html root */
+  /* position: absolute;
+  z-index: -1; */
+
+  /* align-self: flex-start; */
+  background: var(--primarycolor);
+  /* flex-grow: 2; */
 }
 
 #c3 {
-  /* clear: both; */
-  /* you can use left or right  */
-  /* avoid the effect of float */
-  width: 70%;
-}
-
-.head_test {
-  border: 2px solid red;
-  width: 500px;
-  height: 1000px;
-  margin: auto;
-  padding-top: 50px;
-  /* can not give inline to parent if its child element is block */
-}
-
-.img_test {
-  border: 1px solid black;
-  border-radius: 100px;
-  margin: auto;
-  display: block;
-
-  /* position: relative; */
-  /* change position from its actual position */
-
-  /* position: absolute; */
-  /* position from its parent  */
-
-  /* position: fixed; */
-  /* position relative browser window  */
-
-  /* position: sticky; */
-  /* position from its parent  */
-  top: 0px;
-}
-
-.para_test {
-  color: white;
-  background: gray;
-  width: 100px;
-  /* display: inline-block; */
-  /* given to a make bloack element inine, so that it take only space needed and 
-  also has block properties, so we can adjust its width */
-  margin: auto;
-  text-align: center;
+  /* align-self: flex-start; */
+  background: var(--primarycolor);
+  /* flex-grow: 1; */
 }
