@@ -101,21 +101,46 @@ nav ul li:hover {
   margin: 0px 10px;
 }
 
+:root {
+  /* create global variables with custom properties */
+  --primarycolor: red;
+  --bsize: 10px;
+}
+
 #c1 {
+  /* local variable work inside this block */
+  --primarycolor: red;
+
   /* align-self: flex-start; */
   /* flex-grow: 3;
   flex-shrink: 3; */
 
+  /* hide element but space is still occupy by the element */
+  /* visibility: hidden; */
+  /* hide element and also remove space */
+  /* display: none; */
+
+  /* position: absolute;
+  /* not apply on static */
+  z-index: -2;
+
+  background: var(--primarycolor);
+  border: var(--bsize) solid black;
   /* flex-basis: 400px; */
   /* when direction is row then it set width of element */
 }
 
 #c2 {
+  /* position: absolute;
+  z-index: -1; */
+
   /* align-self: flex-start; */
+  background: var(--primarycolor);
   /* flex-grow: 2; */
 }
 
 #c3 {
   /* align-self: flex-start; */
+  background: var(--primarycolor);
   /* flex-grow: 1; */
 }
