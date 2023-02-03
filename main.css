@@ -1,3 +1,9 @@
+:root {
+  /* create global variables with custom properties */
+  --primarycolor: red;
+  --bsize: 10px;
+}
+
 /* applied to all tags or universal property */
 * {
   margin: 0px;
@@ -51,6 +57,7 @@ nav ul li:hover {
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 10px;
   text-align: justify;
+  color: white;
 }
 
 .btn {
@@ -101,12 +108,6 @@ nav ul li:hover {
   margin: 0px 10px;
 }
 
-:root {
-  /* create global variables with custom properties */
-  --primarycolor: red;
-  --bsize: 10px;
-}
-
 #c1 {
   /* local variable work inside this block */
   --primarycolor: red;
@@ -125,9 +126,20 @@ nav ul li:hover {
   z-index: -2;
 
   background: var(--primarycolor);
-  border: var(--bsize) solid black;
   /* flex-basis: 400px; */
   /* when direction is row then it set width of element */
+
+  /* box-shadow: 10px 15px gray; */
+  /* x-offset y-offset color */
+
+  /* box-shadow: inset 10px 15px gray; */
+  /* inset x-offset y-offset color */
+
+  /* box-shadow: 10px 15px 20px gray; */
+  /* x-offset y-offset blur color */
+
+  /* box-shadow: 10px 15px 20px 10px gray; */
+  /* x-offset y-offset blur spread color */
 }
 
 #c2 {
@@ -144,3 +156,11 @@ nav ul li:hover {
   background: var(--primarycolor);
   /* flex-grow: 1; */
 }
+
+/* .head-card {
+  text-shadow: 10px 15px yellow; 
+  x-offset y-offset color
+
+  text-shadow: 10px 15px 10px white;
+   x-offset y-offset blur color
+} */
