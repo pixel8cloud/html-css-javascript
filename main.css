@@ -94,7 +94,7 @@ nav ul li:hover {
   justify-content: center;
   /* align-content: center; */
   align-items: center;
-  flex-wrap: wrap-reverse;
+  /* flex-wrap: wrap-reverse; */
 }
 
 .card {
@@ -125,7 +125,7 @@ nav ul li:hover {
   /* not apply on static */
   z-index: -2;
 
-  background: var(--primarycolor);
+  background: red;
   /* flex-basis: 400px; */
   /* when direction is row then it set width of element */
 
@@ -147,13 +147,13 @@ nav ul li:hover {
   z-index: -1; */
 
   /* align-self: flex-start; */
-  background: var(--primarycolor);
+  background: blue;
   /* flex-grow: 2; */
 }
 
 #c3 {
   /* align-self: flex-start; */
-  background: var(--primarycolor);
+  background: green;
   /* flex-grow: 1; */
 }
 
@@ -164,3 +164,24 @@ nav ul li:hover {
   text-shadow: 10px 15px 10px white;
    x-offset y-offset blur color
 } */
+
+@media only screen and (max-width: 1200px) {
+  /* #c1 {
+    background-color: green;
+  } */
+
+  /* .container {
+    flex-direction: column;
+  } */
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 720px) {
+  /* #c2 {
+    background-color: yellow;
+  } */
+
+  .container {
+    /* display: block; */
+    flex-direction: column;
+  }
+}
