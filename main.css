@@ -57,7 +57,6 @@ nav ul li:hover {
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 10px;
   text-align: justify;
-  color: white;
 }
 
 .btn {
@@ -98,48 +97,12 @@ nav ul li:hover {
 }
 
 .card {
-  background-color: white;
-  color: black;
   border-radius: 10px;
   border: 1px solid black;
   width: 300px;
   height: 300px;
   padding: 25px 20px;
   margin: 0px 10px;
-}
-
-#c1 {
-  /* local variable work inside this block */
-  --primarycolor: red;
-
-  /* align-self: flex-start; */
-  /* flex-grow: 3;
-  flex-shrink: 3; */
-
-  /* hide element but space is still occupy by the element */
-  /* visibility: hidden; */
-  /* hide element and also remove space */
-  /* display: none; */
-
-  /* position: absolute;
-  /* not apply on static */
-  z-index: -2;
-
-  background: red;
-  /* flex-basis: 400px; */
-  /* when direction is row then it set width of element */
-
-  /* box-shadow: 10px 15px gray; */
-  /* x-offset y-offset color */
-
-  /* box-shadow: inset 10px 15px gray; */
-  /* inset x-offset y-offset color */
-
-  /* box-shadow: 10px 15px 20px gray; */
-  /* x-offset y-offset blur color */
-
-  /* box-shadow: 10px 15px 20px 10px gray; */
-  /* x-offset y-offset blur spread color */
 }
 
 #c2 {
@@ -184,4 +147,65 @@ nav ul li:hover {
     /* display: block; */
     flex-direction: column;
   }
+}
+
+#c1 {
+  /* local variable work inside this block */
+  /* --primarycolor: red; */
+
+  /* align-self: flex-start; */
+  /* flex-grow: 3;
+  flex-shrink: 3; */
+
+  /* hide element but space is still occupy by the element */
+  /* visibility: hidden; */
+  /* hide element and also remove space */
+  /* display: none; */
+
+  /* position: absolute;
+  /* not apply on static */
+  z-index: -2;
+
+  /* background: red; */
+  /* flex-basis: 400px; */
+  /* when direction is row then it set width of element */
+
+  /* box-shadow: 10px 15px gray; */
+  /* x-offset y-offset color */
+
+  /* box-shadow: inset 10px 15px gray; */
+  /* inset x-offset y-offset color */
+
+  /* box-shadow: 10px 15px 20px gray; */
+  /* x-offset y-offset blur color */
+
+  /* box-shadow: 10px 15px 20px 10px gray; */
+  /* x-offset y-offset blur spread color */
+}
+
+/* p inside div */
+/* div p {
+  color: red;
+} */
+
+/* p next sibling to div */
+/* div + p {
+  background-color: green;
+} */
+
+/* p directly inside div */
+/* div > p {
+  font-size: 50px;
+} */
+
+/* a[target="_blank"] {
+  background: red;
+} */
+
+/* input[type="text"] {
+  background: red;
+} */
+
+a[href="www.google.com"] {
+  font-size: 50px;
 }
