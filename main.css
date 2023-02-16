@@ -206,6 +206,38 @@ nav ul li:hover {
   background: red;
 } */
 
+/* target a tag with href value */
 a[href="www.google.com"] {
   font-size: 50px;
+}
+
+.list {
+  background: black;
+}
+
+li {
+  color: white;
+  list-style: none;
+}
+
+/* ul child elements */
+/* ul :nth-child(even) {
+  color: red;
+} */
+
+/* ul :last-child {
+  color: red;
+} */
+
+/* ul child elements except last */
+/* ul :not(:last-child) {
+  color: red;
+} */
+
+ul :not(:first-child) {
+  margin-top: 20px;
+}
+
+ul :not(:last-child) {
+  margin-bottom: 20px;
 }
