@@ -39,32 +39,6 @@ nav ul li:hover {
   background-color: rgb(80, 78, 78);
 }
 
-.card:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-
-.card:hover .btn {
-  background-color: black;
-  color: white;
-  border-color: white;
-}
-
-.desc {
-  display: inline-block;
-  line-height: 1.2rem;
-  font-family: "Times New Roman", Times, serif;
-  margin-bottom: 10px;
-  text-align: justify;
-}
-
-.btn {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px 7px;
-}
-
 .nav {
   overflow: auto;
 }
@@ -80,194 +54,40 @@ nav ul li:hover {
   margin-right: 20px;
 }
 
-.container {
-  padding: 30px 0px;
-  margin: 30px;
-  width: 95%;
-  height: 900px;
-  border: 2px solid black;
-  display: flex;
-  /* default direction is row */
-  /* flex-direction: column; */
-
-  justify-content: center;
-  /* align-content: center; */
-  align-items: center;      
-  /* flex-wrap: wrap-reverse; */
+.container{
+  width : 800px;
+  margin: auto;
+  background: red;
 }
 
 .card {
+  width : 200px;
+  border: 2px solid black;
   border-radius: 10px;
-  border: 1px solid black;
-  width: 300px;
-  height: 300px;
-  padding: 25px 20px;
-  margin: 0px 10px;
-}
-
-#c2 {
-  /* position: absolute;
-  z-index: -1; */
-
-  /* align-self: flex-start; */
-  background: blue;
-  /* flex-grow: 2; */
-}
-
-#c3 {
-  /* align-self: flex-start; */
-  background: green;
-  /* flex-grow: 1; */
-}
-
-/* .head-card {
-  text-shadow: 10px 15px yellow; 
-  x-offset y-offset color
-
-  text-shadow: 10px 15px 10px white;
-   x-offset y-offset blur color
-} */
-
-@media only screen and (max-width: 1200px) {
-  /* #c1 {
-    background-color: green;
-  } */
-
-  /* .container {
-    flex-direction: column;
-  } */
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 720px) {
-  /* #c2 {
-    background-color: yellow;
-  } */
-
-  .container {
-    /* display: block; */
-    flex-direction: column;
-  }
-}
-
-#c1 {
-  /* local variable work inside this block */
-  /* --primarycolor: red; */
-
-  /* align-self: flex-start; */
-  /* flex-grow: 3;
-  flex-shrink: 3; */
-
-  /* hide element but space is still occupy by the element */
-  /* visibility: hidden; */
-  /* hide element and also remove space */
-  /* display: none; */
-
-  /* position: absolute;
-  /* not apply on static */
-  z-index: -2;
-
-  /* background: red; */
-  /* flex-basis: 400px; */
-  /* when direction is row then it set width of element */
-
-  /* box-shadow: 10px 15px gray; */
-  /* x-offset y-offset color */
-
-  /* box-shadow: inset 10px 15px gray; */
-  /* inset x-offset y-offset color */
-
-  /* box-shadow: 10px 15px 20px gray; */
-  /* x-offset y-offset blur color */
-
-  /* box-shadow: 10px 15px 20px 10px gray; */
-  /* x-offset y-offset blur spread color */
-}
-
-/* p inside div */
-/* div p {
-  color: red;
-} */
-
-/* p next sibling to div */
-/* div + p {
+  padding: 50px;
   background-color: green;
-} */
 
-/* p directly inside div */
-/* div > p {
-  font-size: 50px;
-} */
+  /* which css property will use transition */
+  /* transition-property: all; */
 
-/* a[target="_blank"] {
-  background: red;
-} */
+  /* time to complete */
+  /* transition-duration: 2s; */
+  
+  /* time to start */
+  /* transition-delay: 2s; */
+  
+  /* transition-timing-function: ease-out; */
 
-/* input[type="text"] {
-  background: red;
-} */
-
-/* target a tag with href value */
-a[href="www.google.com"] {
-  font-size: 50px;
+  /* transition : property duration timing-function delay */
+  transition: all 2s ease-in-out 1s;
 }
 
-.list {
-  background: black;
-}
-
-li {
+.card >h1{
+  font-size: 25px;
   color: white;
-  list-style: none;
 }
 
-/* ul child elements */
-/* ul :nth-child(even) {
-  color: red;
-} */
-
-/* ul :last-child {
-  color: red;
-} */
-
-/* ul child elements except last */
-/* ul :not(:last-child) {
-  color: red;
-} */
-
-/* ul :not(:first-child) {
-  margin-top: 20px;
-}
-
-ul :not(:last-child) {
-  margin-bottom: 20px;
-} */
-
-.head {
-  font-size: 50px;
-}
-
-.para-1 {
-  font-weight: bold;
-}
-
-.section {
-  text-align: center;
-  height: 500px;
-  color: white;
-  background-color: rgba(48, 47, 47, 0.596);
-}
-
-
-.section::after {
-  content: "";
-  background-image: url(./images/semantics-tags.jpeg);
-  background-repeat: no-repeat;
-  position: absolute;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
-  opacity: 0.3;
+.card:hover{
+  background: blue;
+  width: 500px;
 }
