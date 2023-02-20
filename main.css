@@ -54,40 +54,70 @@ nav ul li:hover {
   margin-right: 20px;
 }
 
-.container{
-  width : 800px;
+.container {
+  width: 800px;
   margin: auto;
   background: red;
 }
 
 .card {
-  width : 200px;
+  width: 200px;
   border: 2px solid black;
   border-radius: 10px;
   padding: 50px;
   background-color: green;
 
-  /* which css property will use transition */
-  /* transition-property: all; */
+  animation-name: h2;
 
-  /* time to complete */
-  /* transition-duration: 2s; */
-  
-  /* time to start */
-  /* transition-delay: 2s; */
-  
-  /* transition-timing-function: ease-out; */
+  /* animation-duration: 5s; */
 
-  /* transition : property duration timing-function delay */
-  transition: all 2s ease-in-out 1s;
+  /* animation-delay: 1s; */
+
+  /* animation-timing-function: ease-out; */
+
+  /* animation-fill-mode: backwards; */
+
+  /* animation-direction: alternate-reverse; */
+
+  /* animation-iteration-count: infinite; */
+
+  /* animation: name duration timing-function delay iteration fill-mode */
+  animation: h2 5s ease-in-out 1s infinite backwards;
 }
 
-.card >h1{
+.card > h1 {
   font-size: 25px;
   color: white;
 }
 
-.card:hover{
-  background: blue;
-  width: 500px;
+@keyframes h1 {
+  from {
+    width: 200px;
+  }
+
+  to {
+    width: 500px;
+  }
+}
+
+@keyframes h2 {
+  0% {
+    width: 200px;
+    background-color: green;
+  }
+
+  25% {
+    width: 300px;
+    background-color: blue;
+  }
+
+  50% {
+    width: 400px;
+    background-color: red;
+  }
+
+  100% {
+    width: 500px;
+    background-color: yellow;
+  }
 }
