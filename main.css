@@ -57,32 +57,21 @@ nav ul li:hover {
 .container {
   width: 800px;
   margin: auto;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: red;
 }
 
 .card {
   width: 200px;
+  height: 200px;
   border: 2px solid black;
   border-radius: 10px;
   padding: 50px;
   background-color: green;
-
-  animation-name: h2;
-
-  /* animation-duration: 5s; */
-
-  /* animation-delay: 1s; */
-
-  /* animation-timing-function: ease-out; */
-
-  /* animation-fill-mode: backwards; */
-
-  /* animation-direction: alternate-reverse; */
-
-  /* animation-iteration-count: infinite; */
-
-  /* animation: name duration timing-function delay iteration fill-mode */
-  animation: h2 5s ease-in-out 1s infinite backwards;
+  transition: all 1s ease-in-out;
 }
 
 .card > h1 {
@@ -90,34 +79,18 @@ nav ul li:hover {
   color: white;
 }
 
-@keyframes h1 {
-  from {
-    width: 200px;
-  }
+.card:hover {
+  /* increase size */
+  /* transform: scale(2); */
 
-  to {
-    width: 500px;
-  }
-}
+  /* rotate by degree */
+  /* transform: rotate(360deg); */
 
-@keyframes h2 {
-  0% {
-    width: 200px;
-    background-color: green;
-  }
+  /* bend by degree */
+  /* transform: skew(20deg); */
 
-  25% {
-    width: 300px;
-    background-color: blue;
-  }
-
-  50% {
-    width: 400px;
-    background-color: red;
-  }
-
-  100% {
-    width: 500px;
-    background-color: yellow;
-  }
+  /* move in axis */
+  /* transform: translateX(120px); */
+  /* transform: translateY(120px); */
+  transform: translate(120px, 120px);
 }
