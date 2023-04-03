@@ -55,42 +55,21 @@ nav ul li:hover {
 }
 
 .container {
-  width: 800px;
-  margin: auto;
-  height: 800px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: yellow;
+  display: grid;
+
+  /* divide elements into columns */
+  grid-template-columns: 100px 200px 100px;
+  
+  grid-template-rows: 200px 300px 200px 100px;
+  
+  /* insert some space between elements */
+  gap: 100px;
+}
+
+.class-test {
   background: red;
-}
-
-.card {
-  width: 200px;
-  height: 200px;
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 50px;
-  background-color: green;
-  transition: all 1s ease-in-out;
-}
-
-.card > h1 {
-  font-size: 25px;
-  color: white;
-}
-
-.card:hover {
-  /* increase size */
-  /* transform: scale(2); */
-
-  /* rotate by degree */
-  /* transform: rotate(360deg); */
-
-  /* bend by degree */
-  /* transform: skew(20deg); */
-
-  /* move in axis */
-  /* transform: translateX(120px); */
-  /* transform: translateY(120px); */
-  transform: translate(120px, 120px);
+  width: 100px;
+  border: 1px solid black;
+  height: 100px;
 }
