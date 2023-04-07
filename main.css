@@ -1,3 +1,9 @@
+:root {
+  /* create global variables with custom properties */
+  --primarycolor: red;
+  --bsize: 10px;
+}
+
 /* applied to all tags or universal property */
 * {
   margin: 0px;
@@ -33,32 +39,6 @@ nav ul li:hover {
   background-color: rgb(80, 78, 78);
 }
 
-.card:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-
-.card:hover .btn {
-  background-color: black;
-  color: white;
-  border-color: white;
-}
-
-.desc {
-  display: inline-block;
-  line-height: 1.2rem;
-  font-family: "Times New Roman", Times, serif;
-  margin-bottom: 10px;
-  text-align: justify;
-}
-
-.btn {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px 7px;
-}
-
 .nav {
   overflow: auto;
 }
@@ -75,72 +55,43 @@ nav ul li:hover {
 }
 
 .container {
-  padding: 30px 0px;
-  margin: 30px;
-  width: 95%;
-  height: 900px;
-  border: 2px solid black;
-  display: flex;
-  /* default direction is row */
-  /* flex-direction: column; */
-
-  justify-content: center;
-  /* align-content: center; */
-  align-items: center;
-  flex-wrap: wrap-reverse;
+  display: grid;
+  grid-template-areas:
+  /* each row must have same number of columns */
+    "heading heading heading"
+    "section1 section3 aside"
+    "section2 section2 section2";
 }
 
-.card {
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  border: 1px solid black;
-  width: 300px;
-  height: 300px;
-  padding: 25px 20px;
-  margin: 0px 10px;
+.test-grid {
+  border: 1pxx solid red;
+  color: white;
+  background: black;
+  margin: 10px;
+  padding: 10px;
 }
 
-:root {
-  /* create global variables with custom properties */
-  --primarycolor: red;
-  --bsize: 10px;
+#aside {
+  /* area name */
+  grid-area: aside;
 }
 
-#c1 {
-  /* local variable work inside this block */
-  --primarycolor: red;
-
-  /* align-self: flex-start; */
-  /* flex-grow: 3;
-  flex-shrink: 3; */
-
-  /* hide element but space is still occupy by the element */
-  /* visibility: hidden; */
-  /* hide element and also remove space */
-  /* display: none; */
-
-  /* position: absolute;
-  /* not apply on static */
-  z-index: -2;
-
-  background: var(--primarycolor);
-  border: var(--bsize) solid black;
-  /* flex-basis: 400px; */
-  /* when direction is row then it set width of element */
+#section1 {
+  grid-area: section1;
 }
 
-#c2 {
-  /* position: absolute;
-  z-index: -1; */
-
-  /* align-self: flex-start; */
-  background: var(--primarycolor);
-  /* flex-grow: 2; */
+#section3 {
+  grid-area: section3;
 }
 
-#c3 {
-  /* align-self: flex-start; */
-  background: var(--primarycolor);
-  /* flex-grow: 1; */
+#section3 {
+  grid-area: section3;
+}
+
+#section2 {
+  grid-area: section2;
+}
+
+#heading {
+  grid-area: heading;
 }
