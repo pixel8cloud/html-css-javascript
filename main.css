@@ -55,38 +55,43 @@ nav ul li:hover {
 }
 
 .container {
-  background: yellow;
-  width: 800px;
-  height: 800px;
   display: grid;
-  margin: auto;
-
-  /* divide elements into columns */
-  grid-template-columns: repeat(3, 200px);
-
-  grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
-
-  /* insert some space between elements */
-  gap: 10px;
-  /* column-gap: 20px;
-  row-gap: 40px; */
+  grid-template-areas:
+  /* each row must have same number of columns */
+    "heading heading heading"
+    "section1 section3 aside"
+    "section2 section2 section2";
 }
 
-.class-test {
-  background: red;
-  border: 1px solid black;
-}
-
-.class-1 {
-  font-size: 20px;
+.test-grid {
+  border: 1pxx solid red;
   color: white;
-  grid-column: 1 / span 2;
-  /* grid-column-start: 1;
-  grid-column-end: 3; */
-  
-  grid-row: 1 / span 2;
-  /* grid-row-start: 1;
-  grid-row-end: 3; */
+  background: black;
+  margin: 10px;
+  padding: 10px;
+}
 
-  grid-column:1/ auto 2;
+#aside {
+  /* area name */
+  grid-area: aside;
+}
+
+#section1 {
+  grid-area: section1;
+}
+
+#section3 {
+  grid-area: section3;
+}
+
+#section3 {
+  grid-area: section3;
+}
+
+#section2 {
+  grid-area: section2;
+}
+
+#heading {
+  grid-area: heading;
 }
