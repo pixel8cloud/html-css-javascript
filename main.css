@@ -56,20 +56,37 @@ nav ul li:hover {
 
 .container {
   background: yellow;
+  width: 800px;
+  height: 800px;
   display: grid;
+  margin: auto;
 
   /* divide elements into columns */
-  grid-template-columns: 100px 200px 100px;
-  
-  grid-template-rows: 200px 300px 200px 100px;
-  
+  grid-template-columns: repeat(3, 200px);
+
+  grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+
   /* insert some space between elements */
-  gap: 100px;
+  gap: 10px;
+  /* column-gap: 20px;
+  row-gap: 40px; */
 }
 
 .class-test {
   background: red;
-  width: 100px;
   border: 1px solid black;
-  height: 100px;
+}
+
+.class-1 {
+  font-size: 20px;
+  color: white;
+  grid-column: 1 / span 2;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  
+  grid-row: 1 / span 2;
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+
+  grid-column:1/ auto 2;
 }
