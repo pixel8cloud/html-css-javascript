@@ -1,59 +1,81 @@
-// a = 10;
-// num1 = 10;
+// array
+// var arr = [1, 2, "a", undefined];
+// console.log(arr);
+// console.log(arr[0]);
 
-// console.log("The value of num1++ is " + num1++);
-// console.log("The value of num1 " + num1);
-// console.log("The value of ++num1 is " + ++num1);
-// console.log("The value of num1 " + num1);
-// console.log("The value of num1-- is " + num1--);
-// console.log("The value of num1 " + num1);
-// console.log("The value of --num1 is " + --num1);
-// console.log("The value of num1 " + num1);
+// var arr = new Array(1, 2, 3, 4, 5);
+// console.log(arr);
 
-// if (a < 11) {
-//   console.log("true value");
-// } else if (a == 12) {
-//   console.log("false value");
+// dictionary
+// var dict = {
+//   name: "pixel8cloud",
+//   age: "1 years",
+//   "upload video": "on yt",
+// };
+// console.log(dict);
+// console.log(dict["name"]);
+
+// loops
+// var book = [1, 2, 3, 4, 5];
+
+// book.forEach(function f(i) {
+//   console.log(i);
+// });
+
+// for (i of book) {
+//   console.log(i);
+// }
+
+// for (const key in dict) {
+//   const element = dict[key];
+//   console.log(element);
+// }
+
+// i = 11;
+// while (i > 0) {
+//   console.log(i);
+//   i--;
+// }
+
+// do {
+//   console.log(i);
+//   i--;
+// } while (i > 10);
+
+// for (let i = 0; i < book.length; i++) {
+//   const element = book[i];
+//   console.log(element);
+// }
+
+// alert
+// alert("this is an alert");
+// var promptValue = prompt("this is an alert", "YEs");
+// if (promptValue) {
+//   console.log("yes");
 // } else {
-//   console.log("no value");
+//   console.log("No");
 // }
 
-// switch (a) {
-//   case 10:
-//     console.log("true value");
-//     break;
-
-//   case 12:
-//     console.log(" value is 12 ");
-//     break;
-
-//   default:
-//     console.log(" default");
-//     break;
+// var confirmValue = confirm("Are u sure?");
+// if (confirmValue) {
+//   console.log("yes");
+// } else {
+//   console.log("No");
 // }
 
-// a = 12;
-// s = "Hello World";
-// p = " by pixel8cloud";
-// console.log(s + p);
-// s = s + p;
-// console.log(s);
+// DOM mainpulation
+// var container = document.getElementById("container");
+// console.log(container);
 
-// console.log(`${a} value`);
+// var c = document.getElementsByClassName("container");
+// console.log(c);
 
-// console.log(s[0]);
+// var all = document.querySelectorAll(".nav>ul>li");
+// console.log(all);
 
-// function click() {
-//   console.log(`I'm "Clicked"`);
-// }
+// change input value
+// var input = document.getElementById("input");
+// input.value="Searching"
 
-setTimeout(() => {
-    console.log(`Set Timeout`);
-  }, 5000);
-  
-  setInterval(() => {
-    console.log(`Set Interval`);
-  }, 5000);
-  
-  // click();
-  
+// change style
+// input.style.display="none"
